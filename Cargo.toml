@@ -1,0 +1,16 @@
+[package]
+name = "pin-generator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+argon2 = "0.5.3"
+bcrypt = "0.15.1"
+clap = { version = "4.5.10", features = ["derive"] }
+scrypt = "0.11.0"
+sha2 = "0.10.8"
+sha3 = "0.10.8"
+
+[[bin]]
+name = "pg"
+path = "src/main.rs"
